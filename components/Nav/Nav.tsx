@@ -1,4 +1,17 @@
+import { ConnectButton } from '@rainbow-me/rainbowkit'
 import Image from 'next/image'
+import { createClient, configureChains, defaultChains } from 'wagmi'
+import { publicProvider } from 'wagmi/providers/public'
+ 
+const { provider, webSocketProvider } = configureChains(defaultChains, [
+  publicProvider(),
+])
+ 
+const client = createClient({
+  provider,
+  webSocketProvider,
+})
+
 
 const Nav = () => {
   return (
@@ -20,7 +33,7 @@ const Nav = () => {
             onClick={()=>{
                 console.log("CONECTANDO")
             }}
-        >CONNECT</div>  
+        ><ConnectButton/></div>  
     </div>
   )
 }
