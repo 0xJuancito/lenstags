@@ -2,10 +2,9 @@ import { ConnectButton } from '@rainbow-me/rainbowkit'
 import React, { useState } from 'react';
 import Image from 'next/image'
 import Tabs from '../Tabs/Tabs';
+import Cards from '../Cards/Cards';
 import HeaderProfile from '../HeaderProfile/HeaderProfile';
 import SearchTags from '../SearchTags/SearchTags';
-import View1 from '../ViewPosts/View1'
-import View2 from '../ViewPosts/View2'
 import { createClient, configureChains, defaultChains } from 'wagmi'
 import { publicProvider } from 'wagmi/providers/public'
  
@@ -319,10 +318,30 @@ export default function IndexPage() {
                         <div className="container mx-auto py-10 h-64 md:w-4/5 w-11/12 px-6 ">
                             {/* Remove class [ border-dashed border-2 border-gray-300 ] to remove dotted border */}
                             <HeaderProfile/>
+                          {/*   <div className="flex justify-between items-center">
+                                <div className="w-1/6 h-24 rounded border-dashed border-2 border-gray-300">
+                                Pineados
+                                </div>
+                                <div className="w-1/6 rounded border-dashed border-2 border-gray-300">
+                                Pineados
+                                </div>
+                                <div className=" w-1/6 rounded border-dashed border-2 border-gray-300">
+                                Pineados
+                                </div>
+                                <div className=" w-1/6 rounded border-dashed border-2 border-gray-300">
+                                Pineados
+                                </div>
+                                <div className="w-1/6 rounded border-dashed border-2 border-gray-300">
+                                Pineados
+                                </div>
+                                <div className="w-1/6 rounded border-dashed border-2 border-gray-300">
+                                Pineados
+                                </div>
+                            </div> */}
                             <Tabs/>
                             <SearchTags/>
-                            <div className="w-full h-full rounded border-dashed border-2 border-gray-300">
-                            <View1/>
+                            <div className="w-full h-auto">
+                            <Cards/>
                             {/* Place your content here */}
                           
                             </div>
