@@ -1,6 +1,6 @@
 import React from 'react'
 import Nav from '../components/Nav/Nav'
-import Card from '../components/Profile/Card'
+/* import Sidebar from '../components/Sidebar/Sidebar' */
 import PostView from '../components/ViewPosts/PostView'
 
 const Profiles = () => {
@@ -10,8 +10,8 @@ const Profiles = () => {
             <Nav/>
             <div className='flex w-full pr-40'>
     
-                    <Card img=""/>
-                    <PostView/>
+                    {/* <Sidebar/> */}
+                   {/*  <PostView/> */}
             </div>
         </div>
     ) 
