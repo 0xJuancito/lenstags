@@ -1,6 +1,6 @@
 import { ConnectButton } from '@rainbow-me/rainbowkit'
 import Image from 'next/image'
-import { createClient, configureChains, defaultChains } from 'wagmi'
+import { createClient, configureChains, defaultChains, useAccount } from 'wagmi'
 import { publicProvider } from 'wagmi/providers/public'
  
 const { provider, webSocketProvider } = configureChains(defaultChains, [
@@ -14,6 +14,9 @@ const client = createClient({
 
 
 const Nav = () => {
+
+  const {address} = useAccount()
+
   return (
     <div className='flex w-full content-center 
     justify-center bg-greenLengs text-black border-black border
