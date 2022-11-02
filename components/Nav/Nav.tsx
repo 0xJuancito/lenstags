@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import Image from 'next/image'
 import Tabs from '../Tabs/Tabs';
 import Cards from '../Cards/Cards';
+import Pagination  from '../Pagination/pagination';
 import HeaderProfile from '../HeaderProfile/HeaderProfile';
 import SearchTags from '../SearchTags/SearchTags';
 import { createClient, configureChains, defaultChains } from 'wagmi'
@@ -342,6 +343,7 @@ export default function IndexPage() {
                             <SearchTags/>
                             <div className="w-full h-auto">
                             <Cards/>
+                            <Pagination/>
                             {/* Place your content here */}
                           
                             </div>
