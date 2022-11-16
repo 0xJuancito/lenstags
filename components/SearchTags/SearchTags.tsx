@@ -5,9 +5,7 @@ function index() {
     <>
       <div>
         <div className="">
-          
           <div className=" w-full mx-auto  mt-2 mb-5 relative">
-            
             <div className="relative">
               <svg
                 className="absolute z-20 cursor-pointer top-[18px] left-4"
@@ -25,14 +23,11 @@ function index() {
               <input
                 className="relative text-sm leading-none text-gray-600 bg-white rounded  w-full px-10 py-4 outline-none"
                 type="text"
-                name
-                id
                 placeholder="Search tags..."
               />
             </div>
             <div className="relative bg-white px-4  py-3 border-t border-b border-gray-200 flex gap-x-4 flex-wrap gap-y-4">
-          
-            <p className="text-xs leading-3 text-black pr-8 pl-6 py-1 w-content h-6 bg-greenLengs hover:cursor-pointer hover:font-semibold rounded-none relative  transform duration-300 ease-in-out">
+              <p className="text-xs leading-3 text-black pr-8 pl-6 py-1 w-content h-6 bg-greenLengs hover:cursor-pointer hover:font-semibold rounded-none relative  transform duration-300 ease-in-out">
                 NTF Gaming
                 <svg
                   className="absolute right-2 top-[4px] cursor-pointer"
@@ -49,7 +44,7 @@ function index() {
                 </svg>
               </p>
               <p className="text-xs leading-3 text-black pr-8 pl-6 py-1 w-content h-6 bg-greenLengs hover:cursor-pointer hover:font-semibold rounded-none relative  transform duration-300 ease-in-out">
-               UX/UI Design
+                UX/UI Design
                 <svg
                   className="absolute right-2 top-[4px] cursor-pointer"
                   width={14}
@@ -65,7 +60,7 @@ function index() {
                 </svg>
               </p>
               <p className="text-xs leading-3 text-black pr-8 pl-6 py-1 w-content h-6 bg-greenLengs hover:cursor-pointer hover:font-semibold rounded-none relative  transform duration-300 ease-in-out">
-               Illustrations
+                Illustrations
                 <svg
                   className="absolute right-2 top-[4px] cursor-pointer"
                   width={14}
@@ -81,7 +76,7 @@ function index() {
                 </svg>
               </p>
               <p className="text-xs leading-3 text-black pr-8 pl-6 py-1 w-content h-6 bg-greenLengs hover:cursor-pointer hover:font-semibold rounded-none relative  transform duration-300 ease-in-out">
-               Designing
+                Designing
                 <svg
                   className="absolute right-2 top-[4px] cursor-pointer"
                   width={14}
@@ -97,7 +92,7 @@ function index() {
                 </svg>
               </p>
               <p className="text-xs leading-3 text-black pr-8 pl-6 py-1 w-content h-6 bg-greenLengs hover:cursor-pointer hover:font-semibold rounded-none relative  transform duration-300 ease-in-out">
-               High Fidelity
+                High Fidelity
                 <svg
                   className="absolute right-2 top-[4px] cursor-pointer"
                   width={14}
@@ -113,7 +108,6 @@ function index() {
                 </svg>
               </p>
             </div>
-           
           </div>
         </div>
 
